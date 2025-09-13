@@ -4,7 +4,9 @@
 // You are not allowed to use var
 
 if (process.argv.length < 4) {
-    console.log("No/Insufficient argument");
+    console.log("Insufficient argument");
+} else if (process.argv[2] === undefined || process.argv[3] === undefined) {
+    console.log(`${process.argv[2]}, ${process.argv[3]} is undefined`);
 } else {
     console.log(process.argv[2] + " is " + process.argv[3]);
 }
