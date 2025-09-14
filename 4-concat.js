@@ -3,7 +3,7 @@
 // You must use console.log(...) to print all output
 // You are not allowed to use var
 
-if (process.argv.length < 4) {
+if (process.argv.length > 3 && process.argv.length < 5) {
     console.log("Insufficient argument");
 } else if (process.argv[2] === undefined || process.argv[3] === undefined) {
     console.log(`${process.argv[2]}, ${process.argv[3]} is undefined`);
